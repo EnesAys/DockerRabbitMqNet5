@@ -13,7 +13,7 @@ namespace Net5RabbitMqProducerApi.Services
             {                
                 channel.QueueDeclare(queue: "NameQueue",
                     durable: false, //Data saklama yöntemi (memory-fiziksel)
-                    exclusive: false, //Başka bağlantıların kuyrupa ulaşmasını istersek true kullanabiliriz.
+                    exclusive: false, //Başka bağlantıların kuyruğa ulaşmasını istersek true kullanabiliriz.
                     autoDelete: false, 
                     arguments: null);//Exchange parametre tanımları.          
                           

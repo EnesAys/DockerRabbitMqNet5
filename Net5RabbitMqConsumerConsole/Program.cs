@@ -21,7 +21,7 @@ namespace Net5RabbitMqConsumerConsole
                     Console.WriteLine($" Welcome {message}");
                 };
                 channel.BasicConsume(queue: "NameQueue", //Kuyruk adı
-                    autoAck: true, //Kuruk adı doğrulanması
+                    autoAck: true, //Kuyruk adı doğrulanması
                     consumer: consumer);                
                 Console.ReadLine();
             }            
